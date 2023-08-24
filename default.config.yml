@@ -16,11 +16,13 @@ downloads: ~/.ansible-downloads/
 homebrew_repository: https://github.com/Homebrew/brew
 homebrew_repository_use_master: false
 homebrew_write_global_path: true
+
+homebrew_cask_greedy_mode: false
 homebrew_upgrade_all: true
 
-homebrew_cask_appdir: /Applications
-
 homebrew_clear_cache: false
+
+homebrew_cask_appdir: /Applications
 
 homebrew_retries: 3
 homebrew_delay: 3
@@ -66,3 +68,31 @@ mas_password: ""
 # macOS Dock Configuration Variables
 # Ansible Role: geerlingguy.mac.dock
 #
+
+configure_dock: false
+
+dockitems_remove: []
+#  - Launchpad
+#  - Safari
+#  - Messages
+#  - Mail
+#  - Maps
+#  - Photos
+#  - Facetime
+#  - Calendar
+#  - Contacts
+#  - Reminders
+#  - Notes
+#  - Freeform
+#  - TV
+#  - Music
+#  - 'App Store'
+#  - 'System Settings'
+
+dockitems_persist: []
+#  - name: "App 1 Name"
+#    path: "/Applications/App Name.app/"
+#    pos: 1
+#  - name: "App X Name"
+#    path: "/Applications/App X Name.app/"
+#    pos: X
