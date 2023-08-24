@@ -1,0 +1,68 @@
+---
+
+###############################################################
+#
+# General Playbook Variables
+#
+
+downloads: ~/.ansible-downloads/
+
+###############################################################
+#
+# Homebrew - General Setup Variables
+# Ansible Role: wayofdev.homebrew
+#
+
+homebrew_repository: https://github.com/Homebrew/brew
+homebrew_repository_use_master: false
+homebrew_write_global_path: true
+homebrew_upgrade_all: true
+
+homebrew_cask_appdir: /Applications
+
+homebrew_clear_cache: false
+
+homebrew_retries: 3
+homebrew_delay: 3
+
+homebrew_collect_analytics: true
+
+###############################################################
+#
+# Homebrew - Casks
+# Ansible Role: wayofdev.homebrew
+#
+
+homebrew_casks: []
+
+###############################################################
+#
+# Homebrew - Taps
+# Ansible Role: wayofdev.homebrew
+#
+
+homebrew_taps: []
+
+###############################################################
+#
+# Homebrew Packages
+# Ansible Role: wayofdev.homebrew
+#
+
+homebrew_packages: []
+
+###############################################################
+#
+# Mac App Store (MAS) Application Variables
+# Ansible Role: geerlingguy.mac.mas
+#
+
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
+
+###############################################################
+#
+# macOS Dock Configuration Variables
+# Ansible Role: geerlingguy.mac.dock
+#
