@@ -37,11 +37,8 @@ homebrew_collect_analytics: true
 
 homebrew_taps:
   - homebrew/core
-    state: latest
   - homebrew/cask
-    state: latest
   - homebrew/cask-fonts
-    state: latest
 
 ###############################################################
 #
