@@ -1,5 +1,5 @@
 config.yml
 .DS_Store
-roles*ø
+roles*
 *.vagrant
 *.retry
