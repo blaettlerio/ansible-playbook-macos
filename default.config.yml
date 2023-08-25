@@ -38,6 +38,7 @@ homebrew_collect_analytics: true
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-fonts
 
 ###############################################################
 #
@@ -46,6 +47,9 @@ homebrew_taps:
 #
 
 homebrew_packages: []
+#  - name: PackageName
+#    state: present
+#    update_homebrew: false
 
 ###############################################################
 #
@@ -54,6 +58,8 @@ homebrew_packages: []
 #
 
 homebrew_casks: []
+#  - name: CaskName
+#    state: present
 
 ###############################################################
 #
@@ -81,6 +87,7 @@ mas_upgrade_all_apps: false
 configure_dock: false
 
 dockitems_remove: []
+# Default macOS Dock Apps with macOS Ventura
 #  - Launchpad
 #  - Safari
 #  - Messages
