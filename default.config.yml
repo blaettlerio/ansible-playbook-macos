@@ -77,38 +77,3 @@ mas_uninstalled_apps: []
 #  - { id: , name: "" }
 
 mas_upgrade_all_apps: false
-
-###############################################################
-#
-# macOS Dock Configuration Variables
-# Ansible Role: geerlingguy.mac.dock
-#
-
-configure_dock: false
-
-dockitems_remove: []
-# Default macOS Dock Apps with macOS Ventura
-#  - Launchpad
-#  - Safari
-#  - Messages
-#  - Mail
-#  - Maps
-#  - Photos
-#  - Facetime
-#  - Calendar
-#  - Contacts
-#  - Reminders
-#  - Notes
-#  - Freeform
-#  - TV
-#  - Music
-#  - 'App Store'
-#  - 'System Settings'
-
-dockitems_persist: []
-#  - name: "App 1 Name"
-#    path: "/Applications/App Name.app/"
-#    pos: 1
-#  - name: "App X Name"
-#    path: "/Applications/App X Name.app/"
-#    pos: X
