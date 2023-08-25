@@ -31,19 +31,13 @@ homebrew_collect_analytics: true
 
 ###############################################################
 #
-# Homebrew - Casks
-# Ansible Role: wayofdev.homebrew
-#
-
-homebrew_casks: []
-
-###############################################################
-#
 # Homebrew - Taps
 # Ansible Role: wayofdev.homebrew
 #
 
-homebrew_taps: []
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
 
 ###############################################################
 #
@@ -55,13 +49,28 @@ homebrew_packages: []
 
 ###############################################################
 #
+# Homebrew - Casks
+# Ansible Role: wayofdev.homebrew
+#
+
+homebrew_casks: []
+
+###############################################################
+#
 # Mac App Store (MAS) Application Variables
 # Ansible Role: geerlingguy.mac.mas
 #
 
-mas_installed_apps: []
 mas_email: ""
 mas_password: ""
+
+mas_installed_apps: []
+#  - { id: , name: "" }
+
+mas_uninstalled_apps: []
+#  - { id: , name: "" }
+
+mas_upgrade_all_apps: false
 
 ###############################################################
 #
