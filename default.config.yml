@@ -1,67 +1,64 @@
 ---
 
-###############################################################
+##############################################################
 #
 # General Playbook Variables
 #
 
 downloads: ~/.ansible-downloads/
 
-###############################################################
+################################################################
 #
 # Homebrew - General Setup Variables
-# Ansible Role: wayofdev.homebrew
+# Ansible Role: geerlingguy.mac.homebrew
 #
 
-homebrew_repository: https://github.com/Homebrew/brew
-homebrew_repository_use_master: false
-homebrew_write_global_path: true
+# Set this to your account password if casks need elevated privileges.
+# ansible_become_password: ''
 
-homebrew_cask_greedy_mode: false
-homebrew_upgrade_all: true
+homebrew_repo: https://github.com/Homebrew/brew
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_accept_external_apps: false
+
+homebrew_folders_additional: []
+
+homebrew_use_brewfile: true
+homebrew_brewfile_dir: '~'
 
 homebrew_clear_cache: false
 
-homebrew_cask_appdir: /Applications
-
-homebrew_retries: 3
-homebrew_delay: 3
-
-homebrew_collect_analytics: true
+homebrew_upgrade_all_packages: false
 
 ###############################################################
 #
 # Homebrew - Taps
-# Ansible Role: wayofdev.homebrew
+# Ansible Role: geerlingguy.mac.homebrew
 #
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - homebrew/cask-fonts
+homebrew_taps: []
 
 ###############################################################
 #
-# Homebrew Packages
-# Ansible Role: wayofdev.homebrew
+# Homebrew - Packages
+# Ansible Role: geerlingguy.mac.homebrew
 #
 
-homebrew_packages: []
-#  - name: PackageName
-#    state: present
-#    update_homebrew: false
+homebrew_installed_packages: []
 
-###############################################################
+homebrew_uninstalled_packages: []
+
+################################################################
 #
 # Homebrew - Casks
-# Ansible Role: wayofdev.homebrew
+# Ansible Role: geerlingguy.mac.homebrew
 #
 
-homebrew_casks: []
-#  - name: CaskName
-#    state: present
+homebrew_cask_apps: []
 
-###############################################################
+homebrew_cask_uninstalled_apps: []
+
+##############################################################
 #
 # Mac App Store (MAS) Application Variables
 # Ansible Role: geerlingguy.mac.mas
